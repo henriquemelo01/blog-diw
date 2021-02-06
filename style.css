@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(209, 209, 209);
+  color: black;
+}
+
+main {
+  width: 65%;
+  margin-right: 20px;
+  float: left;
+  border: solid red 2px;
+}
+
+aside {
+  background-color: brown;
+  padding-bottom: 100%;
+  width: 33%;
+  float: left;
+}
+
+/* Header */
+
+.main-menu {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #838080;
+  height: 75px;
+}
+
+#logo {
+  margin: 0 15px;
+}
+
+.main-menu nav,
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* main */
+
+.post-card {
+  background-color: azure;
+}
+
+.post-card img {
+  float: left;
+  margin-left: 15px;
+  margin-right: 20px;
+}
