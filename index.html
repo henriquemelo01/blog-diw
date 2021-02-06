@@ -8,9 +8,9 @@
   </head>
   <body>
     <!-- Cabeçalho -->
-    <header class="main-menu">
+    <header>
       <img id="logo" alt="logo" />
-      <nav>
+      <nav class="main-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="experiencias.html">Experiências</a></li>
@@ -28,13 +28,13 @@
           alt="Post Image"
         />
         <div class="post-content">
-          <h2>Postagem número 1</h2>
+          <h3 class="title">Postagem número 1</h3>
           <div class="subtitle">
             <span class="date">05/02/2021</span>
             <span class="author">Henrique Moraes</span>
             <span class="categories">[Categoria 2]</span>
           </div>
-          <p>
+          <p class="text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
             dolore voluptates laudantium sed temporibus et architecto, harum
             doloribus, ex facilis deserunt rem vitae, repudiandae at officia
@@ -47,8 +47,8 @@
     <aside>
       <form class="search-container">
         <img width="24px" src="src/icon_finder.png" />Pesquisa
-        <input type="text" />
-        <button>Pesquisa</button>
+        <input type="text" class="search text" />
+        <button class="btn_ok">Pesquisa</button>
       </form>
       <nav id="categories">
         <ul>
