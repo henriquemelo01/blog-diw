@@ -1,55 +1,74 @@
-/* * {
+/* Reset do CSS padrão da página */
+
+/* Seletor Universal */
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} */
+}
 
-/* body {
-  background-color: rgb(209, 209, 209);
+/* Seletores de elementos HTML */
+
+body {
+  font-family: arial;
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item a {
+  /* Propriedades aplicadas no chidlren do elemento a */
+  font-size: 22px;
+  text-decoration: none;
   color: black;
 }
 
-main {
-  width: 65%;
-  margin-right: 20px;
-  float: left;
-  border: solid red 2px;
+.menu-item a:hover {
+  color: orangered;
 }
 
-aside {
-  background-color: brown;
-  padding-bottom: 100%;
-  width: 33%;
-  float: left;
-} */
-
-/* Header */
-
-/* .main-menu {
-  display: flex;
-  justify-content: flex-start;
-  background-color: #838080;
-  height: 75px;
-} */
-/* 
-#logo {
-  margin: 0 15px;
+p {
+  background-color: yellow;
 }
 
-.main-menu nav,
-li {
-  display: inline-block;
-  margin-right: 10px;
-} */
-
-/* main */
-
-/* .post-card {
-  background-color: azure;
+/* Seletores de id  # */
+#main-menu {
+  background-color: lightgrey;
 }
 
-.post-card img {
-  float: left;
-  margin-left: 15px;
-  margin-right: 20px;
-} */
+.leia-mais {
+  text-align: right;
+}
+
+/* Seletores de atributo [atributte]  */
+/* [src] {
+  /* float: right; */
+/* } */
+
+/* Seletores de pseudoclasses: pseudoclasses são classes que não são implicitas no html, mas que fazem parte dos elementos :class */
+
+.post-card:hover {
+  color: blue;
+}
+
+/* PseudoElemento : Elemento não explicito no html ::pseuelemento */
+p::first-letter {
+  font-size: 25px;
+}
+
+/* Combinação de seletores */
+/* p.title {} - As regras são apicadas a todos os elementos p que contém a classe title */
+/* div p {} - As regras são aplicadas ao p que possui a div como seu decendente(parent) */
+/* div>p - A regra será aplicada a todos os paragrafos que são children da div */
+
+/* Prioridades : Atributo style (inline) > ID > Class > Elementos - Quanto mais especifica é a seleção, maior a prioridade daquela regra 
+
+Especificidades: Inline,ID,CLass,Element
+                  0/1  , 0/1 , 0/1 , 0/1
+
+
+"propriedade" !important - sobressai as demais ***
+seleção {propriedade; important!}
+*/

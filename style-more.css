@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(8, 8, 8);
+  font-family: Arial;
+  /* font-size: 120%; referencia padrão do navegador */
+}
+
+#main-menu {
+  background-color: lightgray;
+  height: 75px;
+}
+
+.img-menu {
+  display: block;
+  width: 100%;
+  margin: 1.2rem 0;
+}
+
+li.menu-item {
+  display: inline-block;
+}
+
+div.post-card {
+  display: inline-block;
+  padding: 5px;
+  border: solid rgb(128, 128, 128) 2px;
+  border-radius: 0.5rem;
+  /* width - largura do conteúdp */
+  width: calc(
+    33% - 16px
+  ); /* Cada div vai ocupar 1/3 da página e há uma distância de 8px entre cada elemento */
+  /* Alinhamento em relação as linhas da extremidade da caixa */
+  margin: 8px;
+  vertical-align: top;
+  background-color: lightgray;
+}
+
+.post-card img {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Display:
+
+- Display inline: Comportamento de palavra 
+- Display block : Comportamento de bloco 
+- Inlline Block: Aceita width, Blocos dispostos em linha
+
+*/
